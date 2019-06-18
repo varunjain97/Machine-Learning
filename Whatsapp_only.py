@@ -1,11 +1,13 @@
 from selenium import webdriver
 import time
 
+# Write here the name which is in your whatsapp
 data = [['Himanshu Muit',547],['Abhishek Muit',5473],['Madhvi',652],["Jigyasa",45875]]
 import pandas
 import numpy as np
 df = pandas.DataFrame(data,columns=['Name','amt'])
 
+# Write here your own chromedriver path
 driver = webdriver.Chrome(r'C:\Users\Varun Jain\PycharmProjects\Basic\Data_Crawiling\drivers\chromedriver.exe')
 driver.get('https://web.whatsapp.com/')
 time.sleep(6)
